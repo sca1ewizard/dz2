@@ -147,7 +147,7 @@ int main()
 					if ((a[i][j] == 1) && (full == 1))   // если нашли еще единицу и уже была единица (full = 1)
 					{
 						fprintf(file, "%d", (i + 1));	 // печатаем в соответствии с форматом
-						fprintf(file, ";\n");
+						fprintf(file, " [label=%d];\n", (j + 1));
 						full++;
 					}
 				}
